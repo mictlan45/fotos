@@ -1,0 +1,654 @@
+body{
+    margin: 0%;
+    padding: 0%;
+	font-family: sans-serif;
+}
+
+header{
+    width: 100%;
+    background: #000;
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 7;
+}
+
+
+.banner2{
+    background-image: linear-gradient(140deg, rgba(19, 237, 223, 0.3) 0%, rgba(15, 15, 14, 0.800) 100%), url("img/affection-baby-baby-girl-beautiful-377058.jpg");
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+}
+
+
+.textos-h{
+    margin-top: 193px;
+    height: 500px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.textos-h h1{
+    font-size: 60px;
+}
+
+.textos-h p{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.textos-h a{
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    width: 40%;
+    height: 14%;
+    margin-top: 29px;
+    padding: 12px 15px;
+    font-size: 33px;
+    background:#21bf2e ;
+    border-radius: 8px;
+    color: #fff;
+}
+
+
+.website{
+    display: flex;
+    justify-content: space-between;
+}
+
+.website img{
+    width: 58%;
+}
+
+.website .contenedor-textos-main{
+    width: 40%;
+    padding: 82px;
+}
+
+.wave-contenedor img{
+    border-radius: 113px 12px 41px ;
+    height: 400px;
+    margin: 8px;
+    
+    
+}
+.parrafo{
+    text-align: justify;
+    margin-bottom: 90px;
+    
+}
+
+.cta{
+    display: inline-block;
+    text-decoration: none;
+    background-color: #21bf2e;
+    padding: 12px 15px;
+    border-radius: 8px;
+    color: #fff;
+}
+
+
+#btn-menu{
+    display: none;
+}
+header label {
+    display: none;
+    width: 33px;
+    height: 33px;
+    padding: 10px;
+}
+header label:hover{
+    cursor: pointer;
+    background: rgba(55, 214, 41,0.6);
+
+}
+.menu ul{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.menu li :hover{
+    background: rgba(55, 214, 41, 0.6);
+}
+.menu li a {
+    display: block;
+    padding: 20px 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.portafolio{
+    background: #f2f2f2;
+}
+
+.titulo {
+    color:#38bd17 ;
+    font-size: 39px;
+    text-align: center;
+	margin-bottom: 50px;
+	margin-top: 20px;
+}
+
+.galeria-port{
+    display: flex;
+    justify-content: space-evenly;
+	flex-wrap: wrap;
+	margin: 22px;
+	padding: 22px;
+	
+}
+
+.imagen-port{
+    width: 24%;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+}
+
+.imagen-port > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.hover-galeria{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background: hsla(105, 59%, 52%, 0.7);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hover-galeria img{
+    width: 50px;
+}
+
+.hover-galeria p{
+    color: #fff;
+}
+
+.imagen-port:hover .hover-galeria{
+    transform: scale(1);
+}
+
+
+
+
+
+@media(max-width:600px){
+    header label {
+        display: block;
+    }
+    .menu{
+        position: absolute;
+        background:#000;
+        width: 70%;
+        margin-left: -70%;
+        transition: all 0.5s;
+    }
+    .menu ul{
+        flex-direction: column;
+    }
+    
+    #btn-menu:checked ~ .menu {
+        margin: 0;
+    }
+
+    
+}
+.wrap{
+    width: 90%;
+    margin: auto;
+}
+
+.columnas{
+    width: 70%;
+    margin: auto;
+    margin-bottom: 80px;
+    clear: both;
+    
+}
+.c3{
+    width: 33.333%;
+    float: left;
+    padding: 10px 10px;
+    margin: auto;
+    box-sizing: border-box;
+    
+}
+.c3 img{
+   width: 70%;
+   height: 70%;
+}
+.c3 h4{
+   margin-top: 15px;
+   font-size: 16px;
+}
+.c3 p{
+   color:#545e6d;
+   font-family: Lato,sans-serif;
+   font-size:13px;
+   margin-bottom: 4%;
+}
+
+footer{
+    position: relative;
+    float: left;
+    clear: both;
+    text-align: center;
+	color:#fff;
+	font-size: 15px;
+ 	width: 100%;
+ 	height: auto;
+ 	margin: auto;
+ 	background:#000;
+ 	padding: 25px 0px;
+ }
+ .icons ul li a img{
+ 	line-height: 100px;
+ 	width: 39px;
+    border-radius: 70%;
+    float: left;
+ }	
+ .icons{
+ 	width: 100%;
+ 	height: auto;
+ 	margin: auto;
+ }
+ .icons ul{
+ 	margin: 0px;
+ 	padding: 0px;
+ 	text-align: center;
+ }
+
+.icons ul li{
+	display: inline-block;
+}
+ 
+.icons ul li a{
+    color:#272727;
+	font-size: 25px;
+}
+
+
+.contenido
+{
+    height: 332px;
+    margin-top: 20%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.contenido:before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    position: absolute;
+    opacity: 0.6;
+
+}
+
+.contenido p{
+    margin-top: 58px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 2;
+    
+    justify-content: center;
+    color:#fff;
+   font-size: 90px;
+}
+
+#img1{
+    background-image: url(img/man-in-white-dress-shirt-holding-suit-jacket-1043474.jpg);
+}
+
+
+
+
+    
+@media  (min-width:780px) and (max-width:1345px){
+    .c3{
+        width: 33.333%;
+        float: left;
+        padding: auto;
+        margin-top: 33px;
+        margin-bottom: 100px;
+        box-sizing: border-box;
+
+    } 
+}
+@media screen and (max-width:700px){
+    .textos-h h1{
+        font-size: 27px;
+        margin: 11px;
+    }
+    .textos-h p {
+        text-align: center;
+        font-size: 21px;
+        margin: 17px;
+    }
+    .textos-h a{
+        text-align: center;
+        font-size: 23px;
+    }
+    .titulo{
+        font-size: 15px;
+    }
+
+    .titulo.left  {
+        margin: 12px;
+        padding: 12px;
+        font-size: 29px;
+    }
+    .parrafo{
+        font-size: 13px;
+        margin: 8px;
+        padding: 22px;
+    }
+
+    .website{
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .website img{
+        width: 50%;
+        height: 40%;
+        border-radius: 100px;
+    }
+
+    .website .contenedor-textos-main{
+        width: 80%;
+        padding: 12px;
+        margin: 12px;
+    }
+
+.c3{
+    width: 66.333%;
+    float: left;
+    padding: 8px 6px ;
+    box-sizing: border-box;
+    margin: 16px;
+    margin-left: 20%;
+    margin-top: 3px;
+    margin-bottom: 10px;
+    }
+    
+}
+
+
+
+@media(max-width:779px){
+    #img2{
+        margin-left: -90%;
+    }
+    .contenido
+    {
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+    }
+  .contenido p{
+        margin-top: 41px;
+      
+        z-index: 2;
+        justify-content: center;
+        color:#fff;
+       font-size: 16.99px;
+    }
+   
+}
+
+#txt1 {
+    margin-right: 12px;
+    margin-left: 12px;
+    float: right;
+    text-align: center;
+    font-size: 28.3px;
+}
+
+.detalles{
+    width: 100%;
+    background-image: url(img/black-video-camera-2041396.jpg);
+    min-height: 400px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+
+.detalles:before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color:rgba(38, 35, 35,0.9);
+    position: absolute;
+    opacity: 0.6;
+}
+
+#mootivacion{
+    margin: 26px;
+    color: #fff;
+    font-size: 21px;
+    z-index: 1;
+
+}
+
+.detalles ul{
+    z-index: 1;
+    color: #fff;
+    
+}
+
+
+.detalles ul{
+    z-index: 1;
+    color: #fff;
+    
+}
+.detalles2{
+    margin-top: 90px;
+    width: 100%;
+    background-image: url(img/woman-holding-baby-3129717.jpg);
+    min-height: 400px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.detalles2:before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color:rgba(38, 35, 35,0.9);
+    position: absolute;
+    opacity: 0.6;
+}
+#horario1{
+    margin: 26px;
+    font-size: 21px;
+    color: #fff;
+    z-index: 1;
+}
+#mootivacion2{
+    margin: 26px;
+    color: #fff;
+    font-size: 21px;
+    z-index: 1;
+}
+
+.detalles2 ul{
+    z-index: 1;
+    color: #fff;
+    
+}
+
+#horario{
+    margin: 26px;
+    font-size: 21px;
+    color: #fff;
+    z-index: 1;
+}
+.detalles ul{
+    z-index: 1;
+    color: #fff;
+    
+}
+.detalles3{
+    margin-top: 90px;
+    width: 100%;
+    background-image: url(img/photo-of-person-writing-on-tablet-3740234.jpg);
+    min-height: 400px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.detalles3:before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color:rgba(38, 35, 35,0.9);
+    position: absolute;
+    opacity: 0.6;
+}
+#horario3{
+    margin: 26px;
+    font-size: 21px;
+    color: #fff;
+    z-index: 1;
+}
+#mootivacion3{
+    margin: 26px;
+    color: #fff;
+    font-size: 21px;
+    z-index: 1;
+}
+#estilounaimg{
+    border-radius: 50%;
+}
+
+.detalles3 ul{
+    z-index: 1;
+    color: #fff;
+    
+}
+
+#horario3{
+    margin: 26px;
+    font-size: 21px;
+    color: #fff;
+    z-index: 1;
+}
+.detalles3 ul{
+    z-index: 1;
+    color: #fff;
+    
+}
+
+#animado{
+    width: 293px;
+  
+    margin-top: 51px;
+     
+  }
+  @keyframes mover{
+    0%{
+      transform: translateX(20%);
+  
+    }
+    
+    25%{transform: rotateX(10deg); }
+  
+    30%{transform: rotateX(60deg);}
+  
+  }
+  #animado2{
+    width: 233px;
+    margin: 0;
+    height: 183px;
+    border-radius: 33px 11px 112px;
+    margin-top: 241px;
+    border:7px solid white;
+    margin-left: -14%;
+     
+  }
+  @keyframes arriva{
+    0%{
+      transform: translateY(20%);
+  
+    }
+    10%{
+        transform: translatex(80%);
+    
+      }
+    25%{transform: rotateX(10deg); }
+  
+    30%{transform: rotateX(60deg);}
+  
+  }
+@media screen and (max-width:442px){
+    
+    header {
+        background: #000000;;
+    }
+    footer{background: #000000;;}
+    
+}
+.mapa{
+   
+    margin:60px; 
+    padding:0;
+    top: 0;
+
+    display: block;
+}
+.mapa p{
+    font-size: 14px;
+
+}
